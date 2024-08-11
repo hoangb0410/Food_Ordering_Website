@@ -7,9 +7,9 @@ import LoginForm from "./LoginForm";
 const Auth = () => {
   const location = useLocation();
   const navigate = useNavigate();
-  const handleOnClose = ()=>{
-    navigate("/")
-  }
+  const handleOnClose = () => {
+    navigate("/");
+  };
   return (
     <>
       <Modal
@@ -20,7 +20,11 @@ const Auth = () => {
         }
       >
         <Box sx={style}>
-            {location.pathname === "/account/register"?<RegisterForm/>:<LoginForm/>}
+          {location.pathname === "/account/register" ? (
+            <RegisterForm />
+          ) : (
+            <LoginForm />
+          )}
         </Box>
       </Modal>
     </>
