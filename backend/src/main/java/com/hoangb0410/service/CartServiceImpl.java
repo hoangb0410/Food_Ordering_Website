@@ -6,7 +6,6 @@ import com.hoangb0410.model.Food;
 import com.hoangb0410.model.User;
 import com.hoangb0410.repository.CartItemRepository;
 import com.hoangb0410.repository.CartRepository;
-import com.hoangb0410.repository.FoodRepository;
 import com.hoangb0410.request.AddCartItemRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

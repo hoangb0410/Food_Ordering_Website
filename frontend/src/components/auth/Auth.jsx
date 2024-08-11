@@ -1,6 +1,6 @@
 import { Box, Modal } from "@mui/material";
 import { useLocation, useNavigate } from "react-router-dom";
-import { style } from "../cart/Cart";
+import { style } from "../cart/style";
 import RegisterForm from "./RegisterForm";
 import LoginForm from "./LoginForm";
 

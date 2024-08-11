@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import { Button, Card, Divider, Grid, TextField } from "@mui/material";
 import React from "react";
 import CartItem from "./CartItem";
@@ -5,23 +6,12 @@ import AddressCart from "./AddressCart";
 import AddLocationAltIcon from "@mui/icons-material/AddLocationAlt";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
-import { ErrorMessage, Field, Form, Formik } from "formik";
+import { Field, Form, Formik } from "formik";
 import { useDispatch, useSelector } from "react-redux";
 import { createOrder } from "../state/order/Action";
 // import * as Yup from "yup";
 
-const items = [1, 1];
-export const style = {
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  width: 400,
-  bgcolor: "background.paper",
-  outline: "none",
-  boxShadow: 24,
-  p: 4,
-};
+import { style } from "./style";
 
 const initialValues = {
   streetAddress: "",
