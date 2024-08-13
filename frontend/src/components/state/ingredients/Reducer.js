@@ -27,7 +27,7 @@ export const ingredientReducer = (state = initialState, action) => {
     case CREATE_INGREDIENT_CATEGORY_SUCCESS:
       return {
         ...state,
-        category: [...action.category, action.payload],
+        category: [...state.category, action.payload],
       };
     case CREATE_INGREDIENT_SUCCESS:
       return {

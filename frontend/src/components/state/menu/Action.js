@@ -126,7 +126,7 @@ export const deleteFoodAction = ({ foodId, jwt }) => {
       console.log("delete food ", data);
       dispatch({
         type: DELETE_MENU_ITEM_SUCCESS,
-        payload: data,
+        payload: foodId,
       });
     } catch (error) {
       console.log("catch error", error);
